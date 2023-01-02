@@ -1,6 +1,24 @@
 :root {
     --color-gradient: linear-gradient(90deg, rgba(233, 73, 42, 1) 0%, rgba(231, 35, 87, 1) 100%);
-    --color-gradient2: linear-gradient(90deg, rgba(229, 37, 90, 1) 0%, rgba(106, 91, 163, 1) 100%);
+    --purple-gradient--: linear-gradient(90deg, rgba(227, 40, 91, 1) 0%, rgba(106, 91, 163, 1) 100%);
+    --blue-gradient--: linear-gradient(90deg, rgba(118, 198, 207, 1) 0%, rgba(103, 95, 166, 1) 100%);
+    --green-gradient--: linear-gradient(90deg, rgba(117, 199, 207, 1) 0%, rgba(56, 179, 137, 1) 100%);
+}
+
+div {
+    font-family: 'Arial';
+}
+
+p {
+    color: #646869;
+}
+
+small {
+    font-size: 13px !important;
+}
+
+h6 {
+    color: #74787a;
 }
 
 .header-background {
@@ -13,14 +31,30 @@
     background-color: #fc4c02;
 }
 
-.bg-gradiente {
-    width: 40% !important;
-    border-bottom: 8px solid rgba(106, 91, 163, 1);
+.bg-purple-gradient {
+    background: rgb(227, 40, 91);
+    background: var(--purple-gradient--);
+    height: 8px;
+    width: 50%;
+}
+
+.bg-blue-gradient {
+    background: rgb(118, 198, 207);
+    background: var(--blue-gradient--);
+    height: 8px;
+    width: 60%;
+}
+
+.bg-green-gradient {
+    background: rgb(117, 199, 207);
+    background: var(--green-gradient--);
+    height: 8px;
+    width: 60%;
 }
 
 .img-post-1 {
-    width: 100%!important;
-    height: 100%!important;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 .img-post-2 {
@@ -35,7 +69,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {    
+@media screen and (max-width: 768px) {
     .img-post-2 {
         height: 250px !important;
     }
@@ -53,5 +87,8 @@
     .img-post-1 .img-post-2 {
         width: 100% !important;
         height: auto !important;
+    }
+    .bg-purple-gradient {
+        width: 60%;
     }
 }
