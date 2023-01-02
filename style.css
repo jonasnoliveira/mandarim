@@ -59,7 +59,7 @@ h6 {
 
 .img-post-2 {
     width: 635px !important;
-    height: 465px;
+    height: 465px !important;
 }
 
 @media screen and (max-width: 1024px) {
@@ -84,10 +84,6 @@ h6 {
         display: none;
     }
 
-    .img-post-1 .img-post-2 {
-        width: 100% !important;
-        height: auto !important;
-    }
     .bg-purple-gradient {
         width: 60%;
     }
