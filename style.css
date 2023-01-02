@@ -1,0 +1,57 @@
+:root {
+    --color-gradient: linear-gradient(90deg, rgba(233, 73, 42, 1) 0%, rgba(231, 35, 87, 1) 100%);
+    --color-gradient2: linear-gradient(90deg, rgba(229, 37, 90, 1) 0%, rgba(106, 91, 163, 1) 100%);
+}
+
+.header-background {
+    height: 200px;
+    background: rgb(233, 73, 42);
+    background: var(--color-gradient);
+}
+
+.bg-orange {
+    background-color: #fc4c02;
+}
+
+.bg-gradiente {
+    width: 40% !important;
+    border-bottom: 8px solid rgba(106, 91, 163, 1);
+}
+
+.img-post-1 {
+    width: 100%!important;
+    height: 100%!important;
+}
+
+.img-post-2 {
+    width: 635px !important;
+    height: 465px;
+}
+
+@media screen and (max-width: 1024px) {
+    .img-post-2 {
+        width: 100% !important;
+        height: 346px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {    
+    .img-post-2 {
+        height: 250px !important;
+    }
+
+    .none-tablet {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .none-sm {
+        display: none;
+    }
+
+    .img-post-1 .img-post-2 {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
